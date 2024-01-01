@@ -1,42 +1,82 @@
-body, html {
-    height: 100%;
+/* styles.css */
+body, h1, h2, h3, p {
     margin: 0;
-    font-family: Arial, sans-serif;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
 }
 
 .container {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: #f4f4f4; /* Light grey background */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.site-header {
+    background: #ffffff;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 h1 {
-    color: #333; /* Dark grey color for headings */
+    color: #000000;
+    text-align: center;
+    font-size: 2em;
 }
 
-p {
-    color: #666; /* Medium grey for text */
+.site-nav {
+    text-align: right;
 }
 
-input, button {
-    padding: 10px;
-    margin: 5px;
-    border-radius: 5px;
-    border: 1px solid #ddd; /* Light grey border */
-}
-
-button {
-    cursor: pointer;
-    background-color: #007bff; /* Blue background for buttons */
+.download-btn {
+    background-color: #4CAF50;
     color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
     border: none;
+    border-radius: 4px;
 }
 
-#resultDisplay {
-    margin-top: 10px;
-    color: #007bff; /* Blue color for results */
+.main-content {
+    background: linear-gradient(to bottom right, #00C9FF, #92FE9D);
+    color: #ffffff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.feature-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-item {
+        margin-bottom: 20px;
+    }
 }
