@@ -89,7 +89,7 @@ body {
 }
 
 #conversion-form input {
-    width: 70%;
+    width: 30%;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
@@ -101,9 +101,10 @@ body {
 }
 
 .conversion-result {
-    font-size: 1.4em;
+    font-size: 2em;
     color: #F7931A;
     text-align: center;
+    margin-top: 20px;
 }
 
 /* Features section styles */
