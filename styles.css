@@ -1,0 +1,42 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #f4f4f4; /* Light grey background */
+}
+
+h1 {
+    color: #333; /* Dark grey color for headings */
+}
+
+p {
+    color: #666; /* Medium grey for text */
+}
+
+input, button {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd; /* Light grey border */
+}
+
+button {
+    cursor: pointer;
+    background-color: #007bff; /* Blue background for buttons */
+    color: white;
+    border: none;
+}
+
+#resultDisplay {
+    margin-top: 10px;
+    color: #007bff; /* Blue color for results */
+}
