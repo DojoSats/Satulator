@@ -74,7 +74,7 @@ body {
     padding: 20px; /* Reduced padding */
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    margin: 40px 0;
+    margin: 40px auto;
     max-width: 400px; /* Narrower width */
 }
 
