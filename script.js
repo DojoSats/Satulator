@@ -1,7 +1,6 @@
 // Constants
-const API_URL = 'https://api.coingecko.com/api/v3/coins/markets';
-const BTC_ID = 'bitcoin'; // Bitcoin's ID on CoinGecko
-const USD_SYMBOL = 'usd';
+const API_ENDPOINT = 'https://api.coingecko.com/api/v3/coins/markets';
+const API_KEY = 'CG-LmSoAfDJS5VACYvrGmTkmFsM';
 const SATOSHI_PER_BTC = 100000000;
 
 // Elements
@@ -20,9 +19,15 @@ function convertUsdToSatoshi(usdAmount) {
     // Indicate loading
     resultDisplay.innerText = 'Fetching conversion rate...';
 
+    // Construct the API request URL with the API Key
+    const requestURL = `${API_ENDPOINT}?vs_currency=usd&ids=bitcoin`;
+
     // Fetch the current rate
-    fetch(`${API_URL}?vs_currency=${USD_SYMBOL}&ids=${BTC_ID}`, {
-        method: 'GET'
+    fetch(requestURL, {
+        method: 'GET',
+        headers: {
+            'x-cg-demo-api-key': API_KEY
+        }
     })
     .then(response => {
         if (!response.ok) {
@@ -31,8 +36,8 @@ function convertUsdToSatoshi(usdAmount) {
         return response.json();
     })
     .then(data => {
-        // Use the current_price from the response data structure
-        let btcPerUsd = data[0].current_price; // Accessing the current price
+        // Accessing the current price from the response
+        let btcPerUsd = data[0].current_price; // Assuming the response structure is [{...}]
         let satoshi = (usdAmount / btcPerUsd) * SATOSHI_PER_BTC;
         resultDisplay.innerText = `${satoshi.toLocaleString('en-US', {maximumFractionDigits:0})} Satoshi`;
     })
