@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USD to Satoshi Converter</title>
+    <style>
+        /* Base Styles */
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: #0f0f0f; /* Dark background */
+            color: #fff; /* Bright text color for contrast */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Container for the Converter */
+        .container {
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            border-radius: 5px;
+            background: #1a1a1a; /* Slightly lighter shade for the container */
+        }
+
+        /* Styling the Input */
+        input {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        /* Styling the Button */
+        button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background: #007bff; /* Bright accent color for the button */
+            color: white;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3; /* Darken button on hover for interactive feel */
+        }
+
+        /* Result Display */
+        .result {
+            margin-top: 20px;
+            padding: 10px;
+            background: #333; /* Differentiating the result section */
+            border-radius: 5px;
+            min-height: 50px; /* Ensuring visibility */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>USD to Satoshi Converter</h2>
+        <input type="number" id="usdInput" placeholder="Enter USD Amount">
+        <button id="convertBtn">Convert</button>
+        <div class="result" id="resultDisplay">Conversion Result</div>
+    </div>
+</body>
+
+</html>
