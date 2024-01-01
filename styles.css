@@ -71,10 +71,11 @@ body {
 /* Conversion section styles */
 .conversion-section {
     background: #fff;
-    padding: 40px;
+    padding: 20px; /* Reduced padding */
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     margin: 40px 0;
+    max-width: 400px; /* Narrower width */
 }
 
 .conversion-heading {
@@ -84,24 +85,28 @@ body {
 
 #conversion-form {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
 }
 
-#conversion-form input {
-    width: 30%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 1em;
+#conversion-form input,
+.convert-btn {
+    width: 100%; /* Full width within the form */
+    padding: 15px; /* Larger padding */
+    font-size: 1.2em; /* Larger font size */
+    text-align: center;
 }
 
 .convert-btn {
-    width: 25%;
+    cursor: pointer;
+    border: none;
+    background: #333; /* Darker color for contrast */
+    color: white;
 }
 
 .conversion-result {
-    font-size: 2em;
+    font-size: 2.5em; /* Larger font size for result */
     color: #F7931A;
     text-align: center;
     margin-top: 20px;
@@ -142,16 +147,6 @@ footer {
 @media (max-width: 768px) {
     .container {
         width: 95%;
-    }
-
-    #conversion-form {
-        flex-direction: column;
-    }
-
-    #conversion-form input,
-    .convert-btn {
-        width: 100%;
-        margin-bottom: 10px;
     }
 
     .features-section {
