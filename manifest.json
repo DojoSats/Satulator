@@ -1,0 +1,20 @@
+{
+  "short_name": "Satulator",
+  "name": "Satulator - USD to Satoshi Converter",
+  "icons": [
+    {
+      "src": "https://imgur.com/a/4wlzQIN",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "https://imgur.com/a/SgFW5O1",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#3c3c3c",
+  "background_color": "#000"
+}
