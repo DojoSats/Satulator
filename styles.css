@@ -150,11 +150,7 @@ body {
 .predefinedTable td {
     padding: 10px;
     border: 1px solid #000; /* Adjust the color as necessary */
-    text-align: left;
-}
-
-.predefinedTable tr:nth-child(even) {
-    background-color: #f2f2f2; /* Zebra striping */
+    text-align: center;
 }
 
 
