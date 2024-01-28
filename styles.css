@@ -141,17 +141,29 @@ body {
     padding: 20px;
 }
 
+/* Ensure the table is responsive */
 .predefinedTable {
+    width: 100%;
+    max-width: 600px; /* Adjust as necessary */
     margin: 0 auto;
     border-collapse: collapse;
-    width: 80%; /* Adjust the width as necessary */
 }
 
+/* Adjust the cell content to prevent wrapping */
 .predefinedTable td {
     padding: 10px;
-    border: 1px solid #000; /* Adjust the color as necessary */
-    text-align: center;
+    border: 1px solid #000;
+    min-width: 130px; /* Adjust as necessary */
+    white-space: nowrap; /* Prevent wrapping */
 }
+
+/* Adjust font size for mobile screens */
+@media screen and (max-width: 768px) {
+    .predefinedTable td {
+        font-size: 14px; /* Adjust as necessary */
+    }
+}
+
 
 
 /* Footer styles */
