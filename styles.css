@@ -134,6 +134,30 @@ body {
     line-height: 1.4;
 }
 
+/* Sat Table Styles */
+.predefined-container {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+.predefinedTable {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 80%; /* Adjust the width as necessary */
+}
+
+.predefinedTable td {
+    padding: 10px;
+    border: 1px solid #000; /* Adjust the color as necessary */
+    text-align: left;
+}
+
+.predefinedTable tr:nth-child(even) {
+    background-color: #f2f2f2; /* Zebra striping */
+}
+
+
 /* Footer styles */
 footer {
     background: #3C3C3C;
