@@ -7,8 +7,8 @@
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #3C3C3C;
+    color: #f4f4f4;
     padding: 20px 0;
 }
 
@@ -20,7 +20,7 @@ body {
 
 /* Navigation styles */
 .navbar {
-    background-color: #ffffff;
+    background-color: #3C3C3C;
     overflow: hidden;
     padding: 20px 0;
 }
@@ -33,7 +33,7 @@ body {
 
 .logo {
     font-size: 1.8em;
-    color: #333;
+    color: #f4f4f4;
 }
 
 .btn, .btn-link { /* Merged btn-link styles into .btn */
@@ -71,7 +71,7 @@ body {
 
 /* Conversion section styles */
 .conversion-section {
-    background: #fff;
+    background: #3C3C3C;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -100,8 +100,8 @@ body {
 .convert-btn {
     cursor: pointer;
     border: none;
-    background: #333; /* Darker color for contrast */
-    color: white;    
+    background: #fff; /* Lighter color for contrast */
+    color: black;    
 }
 
 .conversion-result {
@@ -136,8 +136,8 @@ body {
 
 /* Footer styles */
 footer {
-    background: #333;
-    color: #fff;
+    background: #3C3C3C;
+    color: #000;
     text-align: center;
     padding: 20px 0;
 }
