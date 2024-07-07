@@ -20,7 +20,7 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -51,13 +51,11 @@ header {
 
 .hero-heading {
     font-size: 2.5em;
-    text-align: center;
     margin-bottom: 10px;
 }
 
 .hero-subheading {
     font-size: 1.2em;
-    text-align: center;
     color: #CCCCCC;
     margin-bottom: 40px;
 }
@@ -65,7 +63,7 @@ header {
 .converter-card {
     background-color: var(--card-bg);
     border-radius: 8px;
-    padding: 30px;
+    padding: 20px;
     margin-bottom: 30px;
 }
 
@@ -83,7 +81,6 @@ header {
 #resultDisplay {
     font-size: 1.5em;
     color: var(--accent-color);
-    text-align: center;
     margin-bottom: 20px;
 }
 
@@ -110,26 +107,18 @@ header {
     padding: 15px;
 }
 
-.predefined-values {
-    background-color: var(--card-bg);
-    border-radius: 8px;
-    padding: 30px;
-    margin-bottom: 30px;
-}
-
 .predefined-values h3 {
-    text-align: center;
     margin-bottom: 20px;
 }
 
 .values-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 15px;
 }
 
 .value-item {
-    background-color: var(--input-bg);
+    background-color: var(--card-bg);
     padding: 15px;
     border-radius: 5px;
     text-align: center;
@@ -148,23 +137,21 @@ header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+    margin-top: 40px;
 }
 
 .feature {
-    background-color: var(--card-bg);
-    padding: 30px;
-    border-radius: 8px;
-    text-align: center;
+    text-align: left;
 }
 
 .feature i {
-    font-size: 2em;
+    font-size: 1.5em;
     color: var(--accent-color);
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .feature h4 {
-    font-size: 1.4em;
+    font-size: 1.2em;
     margin-bottom: 10px;
 }
 
