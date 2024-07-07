@@ -27,7 +27,7 @@ body {
 
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 20px 0;
 }
@@ -111,18 +111,30 @@ body {
 }
 
 .predefined-values {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+    padding: 20px;
 }
 
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+
 .value-item {
-    background-color: var(--input-bg);
+    background-color: var(--card-bg);
     padding: 15px;
     border-radius: 5px;
     text-align: center;
 }
 
+.value-item p:first-child {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.value-item p:last-child {
+    color: var(--accent-color);
+}
+    
 .features-section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
