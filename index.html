@@ -4,25 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Satulator - USD to Satoshi Converter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="manifest" href="/manifest.json">
-    <link rel="apple-touch-icon" sizes="192x192" href="https://imgur.com/a/4wlzQIN">
-<link rel="apple-touch-icon" sizes="512x512" href="https://imgur.com/a/SgFW5O1">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
-<meta name="apple-mobile-web-app-title" content="Satulator">
-
-
 </head>
 <body>
     <header>
-    <nav class="navbar">
-        <div class="container">
-            <h1 class="logo">Satulator</h1>
-            <a href="https://join.robinhood.com/austinc368" class="btn download-btn">Buy BTC Fee Free</a>
-        </div>
-    </nav>
-</header>
+        <nav class="navbar">
+            <div class="container">
+                <h1 class="logo">Satulator</h1>
+                <a href="https://join.robinhood.com/austinc368" class="btn">Buy BTC Fee Free</a>
             </div>
         </nav>
     </header>
@@ -33,7 +23,7 @@
             <p class="hero-subheading">Convert USD to Satoshi with ease and precision.</p>
         </section>
 
-        <section class="conversion-section">
+        <section class="conversion-section card">
             <h3 class="conversion-heading">USD to Satoshi Converter</h3>
             <form id="conversion-form">
                 <input type="number" id="usdInput" name="usd-amount" placeholder="Enter amount in USD" required>
@@ -42,66 +32,23 @@
             <p id="resultDisplay" class="conversion-result">See your Satoshis here...</p>
         </section>
 
-        <div class="predefined-container">
-    <h2>Predefined Values:</h2>
-    <table class="predefinedTable">
-        <tbody>
-            <tr>
-                <td>1 Satoshi</td>
-                <td>= 0.00000001 ฿</td>
-            </tr>
-            <tr>
-                <td>10 Satoshi</td>
-                <td>= 0.00000010 ฿</td>
-            </tr>
-            <tr>
-                <td>100 Satoshi</td>
-                <td>= 0.00000100 ฿</td>
-            </tr>
-            <tr>
-                <td>1,000 Satoshi</td>
-                <td>= 0.00001000 ฿</td>
-            </tr>
-            <tr>
-                <td>10,000 Satoshi</td>
-                <td>= 0.00010000 ฿</td>
-            </tr>
-            <tr>
-                <td>100,000 Satoshi</td>
-                <td>= 0.00100000 ฿</td>
-            </tr>
-            <tr>
-                <td>1,000,000 Satoshi</td>
-                <td>= 0.01000000 ฿</td>
-            </tr>
-            <tr>
-                <td>10,000,000 Satoshi</td>
-                <td>= 0.10000000 ฿</td>
-            </tr>
-            <tr>
-                <td>100,000,000 Satoshi</td>
-                <td>= 1.00000000 ฿</td>
-            </tr>
-        </tbody>
-    </table>
-</div>
-        
+        <section class="predefined-values card">
+            <h3>Predefined Values</h3>
+            <div class="values-grid">
+                <!-- Replace table with div elements -->
+            </div>
+        </section>
+
         <section class="features-section">
-            <article class="feature">
+            <div class="feature card">
+                <i class="feature-icon"><!-- Add icon here --></i>
                 <h4 class="feature-title">Real-Time Conversion</h4>
                 <p class="feature-description">Get the latest conversion rates instantly.</p>
-            </article>
-            <article class="feature">
-                <h4 class="feature-title">User-Friendly Interface</h4>
-                <p class="feature-description">Our intuitive design makes currency conversion simple.</p>
-            </article>
-            <article class="feature">
-                <h4 class="feature-title">Trusted Accuracy</h4>
-                <p class="feature-description">Rely on precise and reliable conversion calculations.</p>
-            </article>
+            </div>
+            <!-- Repeat for other features -->
         </section>
     </main>
-    
+
     <footer>
         <div class="container">
             <p>&copy; 2024 Satulator. All rights reserved.</p>
