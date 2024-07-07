@@ -59,17 +59,17 @@ function convertUsdToSatoshi(usdAmount) {
 
 // Add loading animation
 function showLoading() {
-    resultDisplay.innerHTML = '<div class="loading-spinner"></div>';
+    resultDisplay.innerHTML = 'Loading...';
 }
 
 // Improve error handling
 function showError(message) {
-    resultDisplay.innerHTML = `<div class="error-message">${message}</div>`;
+    resultDisplay.textContent = message;
 }
 
 // Add animation to result display
 function showResult(satoshi) {
-    resultDisplay.innerHTML = `<div class="result-animation">${satoshi.toLocaleString('en-US', {maximumFractionDigits:0})} Satoshi</div>`;
+    resultDisplay.textContent = `${satoshi.toLocaleString('en-US', {maximumFractionDigits:0})} Satoshi`;
 }
 
 // Event Listener for Convert Button
