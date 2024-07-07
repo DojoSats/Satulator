@@ -12,12 +12,12 @@ const resultDisplay = document.getElementById('resultDisplay');
 function convertUsdToSatoshi(usdAmount) {
     // Input validation
     if (!usdAmount || isNaN(usdAmount) || usdAmount <= 0) {
-        alert("Please enter a valid USD amount.");
+        showError("Please enter a valid USD amount.");
         return;
     }
 
     // Indicate loading
-    resultDisplay.innerText = 'Fetching conversion rate...';
+    showLoading();
 
     // Construct the API request URL with the API Key
     const requestURL = `${API_ENDPOINT}?vs_currency=usd&ids=bitcoin`;
@@ -39,13 +39,14 @@ function convertUsdToSatoshi(usdAmount) {
         // Accessing the current price from the response
         let btcPerUsd = data[0].current_price; // Assuming the response structure is [{...}]
         let satoshi = (usdAmount / btcPerUsd) * SATOSHI_PER_BTC;
-        resultDisplay.innerText = `${satoshi.toLocaleString('en-US', {maximumFractionDigits:0})} Satoshi`;
+        showResult(satoshi);
     })
     .catch(error => {
         console.error('Error fetching the conversion rate:', error);
-        resultDisplay.innerText = 'Failed to fetch conversion rate. Please try again later.';
+        showError('Failed to fetch conversion rate. Please try again later.');
     });
 }
+
 // Add loading animation
 function showLoading() {
     resultDisplay.innerHTML = '<div class="loading-spinner"></div>';
@@ -60,8 +61,6 @@ function showError(message) {
 function showResult(satoshi) {
     resultDisplay.innerHTML = `<div class="result-animation">${satoshi.toLocaleString('en-US', {maximumFractionDigits:0})} Satoshi</div>`;
 }
-
-// Update your existing functions to use these new display functions
 
 // Event Listener for Convert Button
 convertBtn.addEventListener('click', function() {
