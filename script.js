@@ -7,6 +7,17 @@ const SATOSHI_PER_BTC = 100000000;
 const usdInput = document.getElementById('usdInput');
 const convertBtn = document.getElementById('convertBtn');
 const resultDisplay = document.getElementById('resultDisplay');
+const numpadButtons = document.querySelectorAll('.numpad button');
+
+// Add event listeners to numpad buttons
+numpadButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        if (button.textContent === '.' && usdInput.value.includes('.')) {
+            return; // Prevent multiple decimal points
+        }
+        usdInput.value += button.textContent;
+    });
+});
 
 // Convert USD to Satoshi
 function convertUsdToSatoshi(usdAmount) {
@@ -36,8 +47,7 @@ function convertUsdToSatoshi(usdAmount) {
         return response.json();
     })
     .then(data => {
-        // Accessing the current price from the response
-        let btcPerUsd = data[0].current_price; // Assuming the response structure is [{...}]
+        let btcPerUsd = data[0].current_price;
         let satoshi = (usdAmount / btcPerUsd) * SATOSHI_PER_BTC;
         showResult(satoshi);
     })
@@ -64,5 +74,12 @@ function showResult(satoshi) {
 
 // Event Listener for Convert Button
 convertBtn.addEventListener('click', function() {
-    convertUsdToSatoshi(usdInput.value);
+    convertUsdToSatoshi(parseFloat(usdInput.value));
+});
+
+// Event Listener for Enter key
+usdInput.addEventListener('keypress', function(event) {
+    if (event.key === 'Enter') {
+        convertUsdToSatoshi(parseFloat(usdInput.value));
+    }
 });
