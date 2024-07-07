@@ -52,11 +52,13 @@ header {
 .hero-heading {
     font-size: 2.5em;
     margin-bottom: 10px;
+    align: center;
 }
 
 .hero-subheading {
     font-size: 1.2em;
     color: #CCCCCC;
+    align: center;
     margin-bottom: 40px;
 }
 
@@ -108,7 +110,7 @@ header {
 }
 
 .predefined-values h3 {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .values-grid {
@@ -136,6 +138,7 @@ header {
 .features-section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    text-align: center;
     gap: 30px;
     margin-top: 40px;
 }
