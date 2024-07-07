@@ -9,96 +9,92 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-    <nav class="navbar">
-        <div class="container">
+    <div class="container">
+        <header>
             <h1 class="logo">Satulator</h1>
             <a href="https://join.robinhood.com/austinc368" class="btn">Buy BTC Fee Free</a>
-        </div>
-    </nav>
-</header>
+        </header>
 
-    <main class="container">
-        <section class="hero-section">
-            <h2 class="hero-heading">Experience the Future of Currency Conversion</h2>
+        <main>
+            <h2 class="hero-heading">Sound Money Has Arrived.</h2>
             <p class="hero-subheading">Convert USD to Satoshi with ease and precision.</p>
-        </section>
 
-        <section class="conversion-section card">
-            <h3 class="conversion-heading">USD to Satoshi Converter</h3>
-            <form id="conversion-form">
-                <input type="number" id="usdInput" name="usd-amount" placeholder="Enter amount in USD" required>
-                <button type="button" id="convertBtn" class="btn convert-btn">Convert</button>
-            </form>
-            <p id="resultDisplay" class="conversion-result">See your Satoshis here...</p>
-        </section>
+            <div class="converter-card">
+                <input type="text" id="usdInput" placeholder="Enter Amount in USD">
+                <div id="resultDisplay">See your Satoshis here...</div>
+                <div class="numpad">
+                    <button>1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button>4</button>
+                    <button>5</button>
+                    <button>6</button>
+                    <button>7</button>
+                    <button>8</button>
+                    <button>9</button>
+                    <button>0</button>
+                    <button>.</button>
+                </div>
+                <button id="convertBtn" class="btn convert-btn">Convert</button>
+            </div>
 
-        <section class="predefined-values card">
-            <h3>Predefined Values</h3>
-            <div class="values-grid">
-                <div class="value-item">
-                    <p>1 Satoshi</p>
-                    <p>= 0.00000001 ฿</p>
-                </div>
-                <div class="value-item">
-                    <p>10 Satoshi</p>
-                    <p>= 0.00000010 ฿</p>
-                </div>
-                <div class="value-item">
-                    <p>100 Satoshi</p>
-                    <p>= 0.00000100 ฿</p>
-                </div>
-                <div class="value-item">
-                    <p>1,000 Satoshi</p>
-                    <p>= 0.00001000 ฿</p>
-                </div>
-                <div class="value-item">
-                    <p>10,000 Satoshi</p>
-                    <p>= 0.00010000 ฿</p>
-                </div>
-                <div class="value-item">
-                    <p>100,000 Satoshi</p>
-                    <p>= 0.00100000 ฿</p>
-                </div>
-                <div class="value-item">
-                    <p>1,000,000 Satoshi</p>
-                    <p>= 0.01000000 ฿</p>
-                </div>
-                <div class="value-item">
-                    <p>10,000,000 Satoshi</p>
-                    <p>= 0.10000000 ฿</p>
-                </div>
-                <div class="value-item">
-                    <p>100,000,000 Satoshi</p>
-                    <p>= 1.00000000 ฿</p>
+            <div class="predefined-values">
+                <h3>Predefined Values</h3>
+                <div class="values-grid">
+                    <div class="value-item">
+                        <p>1 Satoshi</p>
+                        <p>= 0.00000001 ฿</p>
+                    </div>
+                    <div class="value-item">
+                        <p>10 Satoshi</p>
+                        <p>= 0.00000010 ฿</p>
+                    </div>
+                    <div class="value-item">
+                        <p>100 Satoshi</p>
+                        <p>= 0.00000100 ฿</p>
+                    </div>
+                    <div class="value-item">
+                        <p>1,000 Satoshi</p>
+                        <p>= 0.00001000 ฿</p>
+                    </div>
+                    <div class="value-item">
+                        <p>10,000 Satoshi</p>
+                        <p>= 0.00010000 ฿</p>
+                    </div>
+                    <div class="value-item">
+                        <p>100,000 Satoshi</p>
+                        <p>= 0.00100000 ฿</p>
+                    </div>
+                    <div class="value-item">
+                        <p>1,000,000 Satoshi</p>
+                        <p>= 0.01000000 ฿</p>
+                    </div>
+                    <div class="value-item">
+                        <p>10,000,000 Satoshi</p>
+                        <p>= 0.10000000 ฿</p>
+                    </div>
                 </div>
             </div>
-        </section>
 
-        <section class="features-section">
-            <div class="feature card">
-                <i class="feature-icon fas fa-bolt"></i>
-                <h4 class="feature-title">Real-Time Conversion</h4>
-                <p class="feature-description">Get the latest conversion rates instantly.</p>
+            <div class="features-section">
+                <div class="feature">
+                    <i class="fas fa-bolt"></i>
+                    <h4>Real-Time Conversion</h4>
+                    <p>Get the latest conversion rates instantly.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-user-friends"></i>
+                    <h4>User-Friendly Interface</h4>
+                    <p>Our intuitive design makes conversion simple and easy.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-shield-alt"></i>
+                    <h4>Trusted Accuracy</h4>
+                    <p>Rely on precise and reliable conversion calculations.</p>
+                </div>
             </div>
-            <div class="feature card">
-                <i class="feature-icon fas fa-user-friends"></i>
-                <h4 class="feature-title">User-Friendly Interface</h4>
-                <p class="feature-description">Our intuitive design makes currency conversion simple.</p>
-            </div>
-            <div class="feature card">
-                <i class="feature-icon fas fa-shield-alt"></i>
-                <h4 class="feature-title">Trusted Accuracy</h4>
-                <p class="feature-description">Rely on precise and reliable conversion calculations.</p>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Satulator. All rights reserved.</p>
-        </div>
-    </footer>
+        </main>
+    </div>
 
     <script src="script.js"></script>
 </body>
