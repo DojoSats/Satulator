@@ -152,16 +152,19 @@ header {
 .feature i {
     font-size: 1.5em;
     color: var(--accent-color);
+    align: center;
     margin-bottom: 10px;
 }
 
 .feature h4 {
     font-size: 1.2em;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .feature p {
     font-size: 0.9em;
+    text-align: center;
     color: #CCCCCC;
 }
 
