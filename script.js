@@ -46,6 +46,22 @@ function convertUsdToSatoshi(usdAmount) {
         resultDisplay.innerText = 'Failed to fetch conversion rate. Please try again later.';
     });
 }
+// Add loading animation
+function showLoading() {
+    resultDisplay.innerHTML = '<div class="loading-spinner"></div>';
+}
+
+// Improve error handling
+function showError(message) {
+    resultDisplay.innerHTML = `<div class="error-message">${message}</div>`;
+}
+
+// Add animation to result display
+function showResult(satoshi) {
+    resultDisplay.innerHTML = `<div class="result-animation">${satoshi.toLocaleString('en-US', {maximumFractionDigits:0})} Satoshi</div>`;
+}
+
+// Update your existing functions to use these new display functions
 
 // Event Listener for Convert Button
 convertBtn.addEventListener('click', function() {
