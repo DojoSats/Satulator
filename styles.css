@@ -99,6 +99,11 @@ header {
     width: 100%;
     font-size: 1.2em;
     padding: 15px;
+    background-color: #F7931A;
+    color: #1E1E1E;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .predefined-values h3 {
